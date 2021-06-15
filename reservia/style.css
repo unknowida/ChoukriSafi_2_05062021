@@ -1,3 +1,53 @@
 body {
   box-sizing: border-box;
+  font-family: 'Raleway', sans-serif;
 }
+
+
+
+
+/* 
+header {
+  padding: 50px;
+  margin: 50px 50px 50px;
+  display: flex;
+  justify-content: center;
+  color: #0078ff;
+}
+header a {
+  font-size: 16px;
+
+  color: #0078ff;
+  text-decoration: none;
+} 
+
+header div {
+  width: 1230px;
+  display: flex;
+}
+header img {
+  max-width: 100%;
+  height: auto;
+}
+
+#conteneur {
+  align-content: space-around;
+  justify-content: space-between;
+  border: 1px solid#444;
+}
+
+.logo:nth-child(1) {
+  border: 1px solid#444;
+}
+
+.heb:nth-child(2) {
+  border: 1px solid#444;
+}
+
+.Act:nth-child(3) {
+  border: 1px solid#444;
+}
+
+.inscription:nth-child(4) {
+  border: 1px solid#444;
+} */
