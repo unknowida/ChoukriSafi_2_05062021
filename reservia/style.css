@@ -1,10 +1,114 @@
-body {
+/* Classement d'ordres chronologique sur HTML */
+
+/* Main proprieties */
+
+* {
   box-sizing: border-box;
+}
+
+body {
   font-family: 'Raleway', sans-serif;
 }
 
+a {
+  text-decoration: none;
+}
 
+/* Partie Header */
 
+.wrapper {
+  /* display: flex;
+  flex-direction: row;
+  align-items: stretch; */
+  margin-top: 0px;
+  margin-right: auto;
+  margin-bottom: 0px;
+  margin-left: auto;
+  max-width: 1300px;
+}
+
+.navbar {
+  color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px;
+  border: 3px solid black;
+  width: 1300px;
+  flex-grow: 1;
+}
+
+.navbar div img {
+  max-width: 100%;
+  height: auto;
+  flex-basis: 100px;
+  flex-grow: 4;
+}
+
+.navbar ul {
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+  flex-basis: 50px;
+  flex-grow: 0;
+}
+
+.navbar ul li a {
+  color: black;
+  padding: 40px 30px 30px 30px;
+  flex-basis: 50px;
+  flex-grow: 0;
+}
+
+.navbar div a {
+  flex-basis: 50px;
+  flex-grow: 0;
+}
+
+/* .nav-list {
+  padding: ;
+} */
+
+.navbar ul li a:hover {
+  color: #0065fc;
+  border-top: 3px solid #0065fc;
+}
+
+/* .containerHeader-nav-div{
+  align-items: c enter;
+  justify-content: flex-end;
+} */
+
+/* .item.header-div {
+  justify-content: space-between;
+  border: 1px solid;
+}
+
+.container-img {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid;
+} */
+
+/* .nav { */
+/* display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border:1px solid;
+} */
+/* .item-heb {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+} */
+
+/* .nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} */
+
+/* Class de la Zone Navigation */
 
 /* 
 header {
