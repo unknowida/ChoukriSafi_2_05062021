@@ -1,0 +1,8 @@
+/* Mobile raremment au delà de 475px */
+
+@media screen and (max-width: 475px) {
+  .navbar-container {
+    width: 100%;
+    height: 150px;
+  }
+}
