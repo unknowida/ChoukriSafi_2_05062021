@@ -1,8 +1,19 @@
 /* Mobile raremment au delà de 475px */
+/* max , si l'ecran est inférieur ou égale à 475px */
 
 @media screen and (max-width: 475px) {
   .navbar-container {
-    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: auto;
     height: 150px;
+    flex-wrap: wrap;
+  }
+
+  .navbar-container ul li a:hover {
+    color: #0065fc;
+    border-bottom: 3px solid #0065fc;
+    border-top: none;
   }
 }
