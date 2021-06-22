@@ -1,7 +1,7 @@
 /* Mobile raremment au delà de 475px */
 /* max , si l'ecran est inférieur ou égale à 475px */
 
-@media screen and (max-width: 475px) {
+@media screen and (max-width: 600px) {
   .navbar-container {
     display: flex;
     flex-direction: column;
