@@ -1,5 +1,6 @@
 {
-    "recommendations": [
-        "umoxfo.vscode-w3cvalidation"
-    ]
+  "recommendations": [
+    "umoxfo.vscode-w3cvalidation",
+    "github.vscode-pull-request-github"
+  ]
 }
