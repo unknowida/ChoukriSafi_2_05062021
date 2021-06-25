@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /* Classement d'ordres chronologique sur HTML */
 
 /* Propriétés Générales */
@@ -148,3 +149,155 @@ header {
     border-top: none;
   }
   }
+=======
+/* Classement d'ordres chronologique sur HTML */
+
+/* Propriétés Générales */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Raleway', sans-serif;
+  font-size: medium;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+
+
+/* Partie Header */
+
+#wrapper {
+  margin: 0 auto 0 auto;
+  max-width: 1440px;
+}
+
+header {
+  display: flex;
+  max-width: 1440px;
+  margin: auto;
+}
+
+.navbar-container {
+  flex-grow: 5;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* border: 3px solid black; */
+}
+
+.logo {
+  flex-grow: 4;
+  max-width: 100%;
+ align-self: center;
+ padding: 30px;
+}
+
+.navbar-container ul {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.navbar-container ul li a {
+  color: black;
+
+}
+
+/* Hébérgements */
+#wrapper > header > nav > ul > li:nth-child(1){
+  flex: 1 1 100%;
+  align-items: center;
+  text-align: center;
+
+  justify-content: center;
+
+/*   display: inline;
+ *//*   padding-top: 50px;
+ */  
+ padding-top: 60px;
+ padding-bottom: 60px;
+ border: 3px solid black ;
+
+ }
+
+/* Activités */
+#wrapper > header > nav > ul > li:nth-child(2){
+  flex: 1 1 100%;
+  align-items: center;
+  text-align: center;
+
+  padding-top: 60px;
+ padding-bottom: 60px;
+ border: 3px solid black ;
+ justify-content: center;
+
+
+
+}
+
+#wrapper > header > nav > ul > li:nth-child(1):hover {
+  border-top: 3px solid #0065fc ;
+  color:#0065fc;
+}
+
+#wrapper > header > nav > ul > li:nth-child(2):hover {
+  border-top: 3px solid #0065fc ;
+  color:#0065fc;
+}
+
+.login {
+  display: flex;
+  padding: 30px 30px 30px 0px;
+  font-weight: bold;
+  border: none;
+  background: none;
+  color: #0065fc;
+  font-style: bold;
+}
+
+
+
+
+@media screen and (max-width: 600px) {
+  
+  .navbar-container {
+    flex-wrap: wrap;
+  }
+  .navbar-container ul {
+    display: flex; 
+    width: 100%;
+    text-align: center;
+    order: 1;
+   }
+
+  #wrapper > header > nav > ul > li:nth-child(1){
+    flex: 1 1 50%;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    border: 3px solid black;
+  }
+
+  #wrapper > header > nav > ul > li:nth-child(2){
+    flex: 1 1 50%;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    border: 3px solid black;
+
+  }
+  /* Bordure de sélection bleu */
+
+  #wrapper > header > nav > ul > li:nth-child(2){
+    
+    border-bottom: 3px solid #0065fc;
+    border-top: none;
+  }
+  }
+>>>>>>> 05c8130ad2fb1ac909299f13f1d9b81cb32d13a8
