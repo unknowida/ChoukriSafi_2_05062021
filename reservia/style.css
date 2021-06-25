@@ -1,6 +1,6 @@
 /* Classement d'ordres chronologique sur HTML */
 
-/* Main proprieties */
+/* Propriétés Générales */
 
 * {
   box-sizing: border-box;
@@ -8,8 +8,6 @@
 
 body {
   font-family: 'Raleway', sans-serif;
-  /* display: flex; */
-  /* flex-direction: column; */
   font-size: medium;
   margin: 0;
 }
@@ -18,9 +16,7 @@ a {
   text-decoration: none;
 }
 
-div {
-  display: block;
-}
+
 
 /* Partie Header */
 
@@ -32,8 +28,6 @@ div {
 header {
   display: flex;
   max-width: 1440px;
-  width: 95%;
-  height: 100px;
   margin: auto;
 }
 
@@ -49,42 +43,67 @@ header {
 .logo {
   flex-grow: 4;
   max-width: 100%;
-  height: auto;
-  margin-right: auto;
-  align-self: center;
-  /* border: 2px solid black; */
+ align-self: center;
+ padding: 30px;
 }
 
 .navbar-container ul {
   flex-grow: 1;
   display: flex;
-
   align-items: center;
   justify-content: space-around;
-  /* border: 2px solid black; */
 }
 
 .navbar-container ul li a {
   color: black;
-  /* padding-top: 38px; */
+
 }
 
-#wrapper > header > nav > ul > li:nth-child(1) > div:hover {
-  color: #0065fc;
-  padding-top: 40px;
-  padding-bottom: 40px;
-  border-top: 3px solid #0065fc;
+/* Hébérgements */
+#wrapper > header > nav > ul > li:nth-child(1){
+  flex: 1 1 100%;
+  align-items: center;
+  text-align: center;
+
+  justify-content: center;
+
+/*   display: inline;
+ *//*   padding-top: 50px;
+ */  
+ padding-top: 60px;
+ padding-bottom: 60px;
+ border: 3px solid black ;
+
+ }
+
+/* Activités */
+#wrapper > header > nav > ul > li:nth-child(2){
+  flex: 1 1 100%;
+  align-items: center;
+  text-align: center;
+
+  padding-top: 60px;
+ padding-bottom: 60px;
+ border: 3px solid black ;
+ justify-content: center;
+
+
+
 }
 
-#wrapper > header > nav > ul > li:nth-child(2) > div:hover {
-  padding-top: 40px;
-  padding-bottom: 40px;
-  border-top: 3px solid #0065fc;
-  color: #0065fc;
+#wrapper > header > nav > ul > li:nth-child(1):hover {
+  border-top: 3px solid #0065fc ;
+  color:#0065fc;
+}
+
+#wrapper > header > nav > ul > li:nth-child(2):hover {
+  border-top: 3px solid #0065fc ;
+  color:#0065fc;
 }
 
 .login {
   display: flex;
+  padding: 30px 30px 30px 0px;
   font-weight: bold;
   border: none;
   background: none;
@@ -92,152 +111,40 @@ header {
   font-style: bold;
 }
 
-/* .navbar-container div a {
-  flex-basis: 50px;
-} */
 
-/* .ul {
-  width: 100%;
-  height: 100%;
-  align-items: center;
-  display: flex; */
-/* justify-content: center; */
-/* } */
 
-/* Bordure de sélection bleu */
-/* .Héb:hover {
-} */
-/* .Act:hover {
-  border-top: 3px solid #0065fc;
-} */
 
 @media screen and (max-width: 600px) {
+  
   .navbar-container {
-    width: 100%;
     flex-wrap: wrap;
   }
-
   .navbar-container ul {
-    display: flex;
-
-    justify-content: space-around;
+    display: flex; 
     width: 100%;
     text-align: center;
     order: 1;
+   }
+
+  #wrapper > header > nav > ul > li:nth-child(1){
+    flex: 1 1 50%;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    border: 3px solid black;
   }
 
+  #wrapper > header > nav > ul > li:nth-child(2){
+    flex: 1 1 50%;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    border: 3px solid black;
+
+  }
   /* Bordure de sélection bleu */
 
-  #wrapper > header > nav > ul > li:nth-child(1) > div {
-    width: 100%;
-    /* color: #0065fc; */
-    /* border-bottom: 3px solid #0065FC; */
-    padding: 30px;
-    border-top: 0;
-    border: 3px solid black;
-    height: auto;
-    margin-right: 1px;
-  }
-
-  #wrapper > header > nav > ul > li:nth-child(2) > div {
-    width: 100%;
-    padding: 30px;
-    border-top: 0;
-    border: 3px solid black;
-
-    /* height: auto; */
-    margin-right: 1px;
-  }
-
-  /* .Héb:hover {
+  #wrapper > header > nav > ul > li:nth-child(2){
+    
     border-bottom: 3px solid #0065fc;
     border-top: none;
-  } */
-
-  /* .Act:hover {
-    border-bottom: 3px solid #0065fc;
-    border-top: none;
-  } */
-}
-
-/* .containerHeader-nav-div{
-  align-items: c enter;
-  justify-content: flex-end;
-} */
-
-/* .item.header-div {
-  justify-content: space-between;
-  border: 1px solid;
-}
-
-.container-img {
-  display: flex;
-  justify-content: space-between;
-  border: 1px solid;
-} */
-
-/* .nav { */
-/* display: flex;
-  justify-content: space-between;
-  align-items: center;
-  border:1px solid;
-} */
-/* .item-heb {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-} */
-
-/* .nav {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-} */
-
-/* Class de la Zone Navigation */
-
-/* 
-header {
-  padding: 50px;
-  margin: 50px 50px 50px;
-  display: flex;
-  justify-content: center;
-  color: #0078ff;
-}
-header a {
-  font-size: 16px;
-
-  color: #0078ff;
-  text-decoration: none;
-} 
-
-header div {
-  width: 1230px;
-  display: flex;
-}
-header img {
-  max-width: 100%;
-  height: auto;
-}
-
-#conteneur {
-  align-content: space-around;
-  justify-content: space-between;
-  border: 1px solid#444;
-}
-
-.logo:nth-child(1) {
-  border: 1px solid#444;
-}
-
-.heb:nth-child(2) {
-  border: 1px solid#444;
-}
-
-.Act:nth-child(3) {
-  border: 1px solid#444;
-}
-
-.inscription:nth-child(4) {
-  border: 1px solid#444;
-} */
+  }
+  }
