@@ -4,7 +4,6 @@
   box-sizing: border-box;
 }
 
-
 body {
   font-family: 'Raleway', sans-serif;
   font-size: medium;
@@ -40,10 +39,11 @@ header {
 .logo {
   flex-grow: 4;
   max-width: 100%;
- align-self: center;
- padding: 30px;
+  align-self: center;
+  padding: 30px;
 }
 
+/* Zone Héb & Act */
 .navbar-container ul {
   flex-grow: 1;
   display: flex;
@@ -51,52 +51,52 @@ header {
   justify-content: space-around;
 }
 
-.navbar-container ul li a {
-  color: black;
-
-}
-
 /* Hébérgements */
-#wrapper > header > nav > ul > li:nth-child(1){
+#wrapper > header > nav > ul > li:nth-child(1) {
   flex: 1 1 100%;
   align-items: center;
   text-align: center;
-
   justify-content: center;
-
-/*   display: inline;
- *//*   padding-top: 50px;
- */  
- padding-top: 60px;
- padding-bottom: 60px;
- border: 3px solid black ;
-
- }
+  padding-top: 60px;
+  padding-bottom: 60px;
+  /* border: 3px solid black; */
+}
 
 /* Activités */
-#wrapper > header > nav > ul > li:nth-child(2){
+#wrapper > header > nav > ul > li:nth-child(2) {
   flex: 1 1 100%;
   align-items: center;
   text-align: center;
 
   padding-top: 60px;
- padding-bottom: 60px;
- border: 3px solid black ;
- justify-content: center;
+  padding-bottom: 60px;
+  /* border: 3px solid black; */
+  justify-content: center;
+}
 
-
-
+a.active,
+a:hover {
+  color: #0065fc;
 }
 
 #wrapper > header > nav > ul > li:nth-child(1):hover {
-  border-top: 3px solid #0065fc ;
-  color:#0065fc;
+  border-top: 3px solid #0065fc;
+  color: #0065fc; /*Voir avec Pierre *voir avec Pierre pourquoi la colour bleu ne passe pas/
+
+
+  /* color: #0065fc; */
+  /* color: #0065fc; */
 }
 
 #wrapper > header > nav > ul > li:nth-child(2):hover {
-  border-top: 3px solid #0065fc ;
-  color:#0065fc;
+  border-top: 3px solid #0065fc;
+  /* text-decoration-color: #0065fc; */
 }
+.navbar-container ul li a {
+  color: black;
+}
+
+/* Selecteur DE SECTION Bordure bleu */
 
 .login {
   display: flex;
@@ -108,40 +108,42 @@ header {
   font-style: bold;
 }
 
-
-
+/* MOBILE */
 
 @media screen and (max-width: 600px) {
-  
   .navbar-container {
     flex-wrap: wrap;
   }
   .navbar-container ul {
-    display: flex; 
+    display: flex;
     width: 100%;
     text-align: center;
     order: 1;
-   }
-
-  #wrapper > header > nav > ul > li:nth-child(1){
-    flex: 1 1 50%;
-    padding-top: 10px;
-    padding-bottom: 20px;
-    border: 3px solid black;
   }
 
-  #wrapper > header > nav > ul > li:nth-child(2){
+  #wrapper > header > nav > ul > li:nth-child(1) {
     flex: 1 1 50%;
     padding-top: 10px;
     padding-bottom: 20px;
-    border: 3px solid black;
+    /* border: 3px solid black; */
+  }
 
+  #wrapper > header > nav > ul > li:nth-child(2) {
+    flex: 1 1 50%;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    /* border: 3px solid black; */
   }
   /* Bordure de sélection bleu */
 
-  #wrapper > header > nav > ul > li:nth-child(2){
-    
+  #wrapper > header > nav > ul > li:nth-child(1):hover {
+    border-bottom: 3px solid #0065fc;
+    border-top: none;
+    color: #0065fc; /*voir avec Pierre pourquoi la colour bleu ne passe pas*/
+  }
+
+  #wrapper > header > nav > ul > li:nth-child(2):hover {
     border-bottom: 3px solid #0065fc;
     border-top: none;
   }
-  }
+}
