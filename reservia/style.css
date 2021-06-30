@@ -6,12 +6,17 @@
 
 body {
   font-family: 'Raleway', sans-serif;
-  font-size: medium;
+  font-size: 1.1em;
   margin: 0;
 }
 
 a {
   text-decoration: none;
+}
+
+h1 {
+  font-weight: 700;
+  font-style: normal;
 }
 
 /* Partie Header */
@@ -37,11 +42,13 @@ header {
 }
 
 .logo {
-  flex-grow: 4;
+  flex-grow: 6;
   max-width: 100%;
   align-self: center;
-  padding: 30px;
+  padding: 30px 0px 30px 20px;
+
 }
+
 
 /* Zone Héb & Act */
 .navbar-container ul {
@@ -57,7 +64,7 @@ header {
   align-items: center;
   text-align: center;
   justify-content: center;
-  padding-top: 60px;
+  padding-top: 57px;
   padding-bottom: 60px;
   /* border: 3px solid black; */
 }
@@ -68,7 +75,7 @@ header {
   align-items: center;
   text-align: center;
 
-  padding-top: 60px;
+  padding-top: 57px;
   padding-bottom: 60px;
   /* border: 3px solid black; */
   justify-content: center;
@@ -76,13 +83,11 @@ header {
 
 a.active,
 a:hover {
-  color: #0065fc;
+  /* color: #0065fc; */
 }
 
 #wrapper > header > nav > ul > li:nth-child(1):hover {
   border-top: 3px solid #0065fc;
-  color: #0065fc; /*Voir avec Pierre *voir avec Pierre pourquoi la colour bleu ne passe pas/
-
 
   /* color: #0065fc; */
   /* color: #0065fc; */
@@ -93,14 +98,14 @@ a:hover {
   /* text-decoration-color: #0065fc; */
 }
 .navbar-container ul li a {
-  color: black;
+  /* color: black; */
 }
 
 /* Selecteur DE SECTION Bordure bleu */
 
 .login {
   display: flex;
-  padding: 30px 30px 30px 0px;
+  padding: 57px 30px 60px 0px;
   font-weight: bold;
   border: none;
   background: none;
@@ -146,12 +151,22 @@ a:hover {
     border-bottom: 3px solid #0065fc;
     border-top: none;
   }
+
+  .logo {
+    flex-grow: 6;
+    max-width: 100%;
+    align-self: center;
+    padding: 30px 0px 30px 20px;
+  
+  }
+  .login {
+    padding: 47px 30px 40px 0px;
+    
+  }
+
 }
 
-/* *bouton recherche*/ 
-h1 {
-  margin-bottom: 20px;
-}
+/*SECTION 1 RECHERCHE + FILTRE*/
 
 #recherche {
   width: 95%;
