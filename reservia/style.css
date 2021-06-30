@@ -147,3 +147,54 @@ a:hover {
     border-top: none;
   }
 }
+
+/* *bouton recherche*/ 
+h1 {
+  margin-bottom: 20px;
+}
+
+#recherche {
+  width: 95%;
+  margin: auto;
+  max-width: 1440px;
+}
+
+#inscription {
+  color: #0065fc;
+  font-weight: bold;
+}
+
+div.bouton_recherche {
+  display: inline-flex;
+  margin-top: 20px;
+  border: 1px solid #f2f2f2;
+  border-radius: 15px;
+}
+
+.ici {
+  background-color: #f2f2f2;
+  font-size: 1.5em;
+  padding: 15px;
+  text-align: center;
+  border-radius: 15px 0px 0px 15px;
+}
+
+#rechercher {
+  font-size: 1.1em;
+  padding: 13px;
+  font-weight: bold;
+  border: none;
+}
+
+button {
+  background-color: #0065fc;
+  color: white;
+  border: none;
+  padding: 10px;
+  font-size: 1.1em;
+  border-radius: 0px 15px 15px 0px;
+}
+
+#loupe {
+  display: none;
+}
