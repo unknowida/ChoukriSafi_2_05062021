@@ -6,7 +6,7 @@
 
 body {
   font-family: 'Raleway', sans-serif;
-  font-size: 1.1em;
+  font-size: 1em;
   margin: 0;
 }
 
@@ -64,8 +64,10 @@ header {
   align-items: center;
   text-align: center;
   justify-content: center;
-  padding-top: 57px;
-  padding-bottom: 60px;
+  padding-top: 47px;
+  padding-bottom: 50px;
+  border-top: 3px solid #f2f2f2;
+
   /* border: 3px solid black; */
 }
 
@@ -75,8 +77,10 @@ header {
   align-items: center;
   text-align: center;
 
-  padding-top: 57px;
-  padding-bottom: 60px;
+  padding-top: 47px;
+  padding-bottom: 50px;
+  border-top: 3px solid #f2f2f2;
+
   /* border: 3px solid black; */
   justify-content: center;
 }
@@ -105,7 +109,7 @@ a:hover {
 
 .login {
   display: flex;
-  padding: 57px 30px 60px 0px;
+  padding: 47px 20px 50px 0px;
   font-weight: bold;
   border: none;
   background: none;
@@ -116,6 +120,22 @@ a:hover {
 /* MOBILE */
 
 @media screen and (max-width: 600px) {
+
+  /* Propriétés Générales pour mobile */
+
+  h1 {
+    font-weight:  700;
+    font-style: bold;
+    font-size: 1.4rem;
+  }
+
+
+  /*SECTION 1 RECHERCHE + FILTRE*/
+
+  #recherche > h1{
+    padding: 0 0 20px;
+  }
+
   .navbar-container {
     flex-wrap: wrap;
   }
@@ -126,17 +146,24 @@ a:hover {
     order: 1;
   }
 
+  #wrapper {
+    padding-left: 0px;
+  }
+
   #wrapper > header > nav > ul > li:nth-child(1) {
     flex: 1 1 50%;
     padding-top: 10px;
     padding-bottom: 20px;
-    /* border: 3px solid black; */
+    border-bottom: 3px solid #f2f2f2;
+    border-top: none;
   }
 
   #wrapper > header > nav > ul > li:nth-child(2) {
     flex: 1 1 50%;
     padding-top: 10px;
     padding-bottom: 20px;
+    border-bottom: 3px solid #f2f2f2;
+    border-top: none;
     /* border: 3px solid black; */
   }
   /* Bordure de sélection bleu */
@@ -159,11 +186,22 @@ a:hover {
     padding: 30px 0px 30px 20px;
   }
   .login {
-    padding: 47px 30px 40px 0px;
+    padding: 47px 20px 40px 0px;
   }
+  #recherche {
+    padding: 20px;
+  }
+  #wrapper > header > nav > ul {
+    padding: 0px;
+  }
+  
 }
 
 /*SECTION 1 RECHERCHE + FILTRE*/
+
+#recherche > h1{
+  padding: 0 0 20px;
+}
 
 #recherche {
   /* width: 95%; */
@@ -192,7 +230,7 @@ div.bouton_recherche {
 }
 
 #rechercher {
-  font-size: 1.1em;
+  font-size: 1rem;
   padding: 13px;
   font-weight: bold;
   border: none;
