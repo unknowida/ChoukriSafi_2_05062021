@@ -115,86 +115,7 @@ a:hover {
   background: none;
   color: #0065fc;
   font-style: bold;
-}
-
-/* MOBILE */
-
-@media screen and (max-width: 600px) {
-  /* Propriétés Générales pour mobile */
-
-  h1 {
-    font-weight: 700;
-    font-style: bold;
-    font-size: 1.4rem;
-  }
-
-  /*SECTION 1 RECHERCHE + FILTRE*/
-
-  #recherche > h1 {
-    padding: 0 0 20px;
-  }
-
-  .navbar-container {
-    flex-wrap: wrap;
-  }
-  .navbar-container ul {
-    display: flex;
-    width: 100%;
-    text-align: center;
-    order: 1;
-  }
-
-  #wrapper {
-    padding-left: 0px;
-  }
-
-  #wrapper > header > nav > ul > li:nth-child(1) {
-    flex: 1 1 50%;
-    padding-top: 10px;
-    padding-bottom: 20px;
-    border-bottom: 3px solid #f2f2f2;
-    border-top: none;
-  }
-
-  #wrapper > header > nav > ul > li:nth-child(2) {
-    flex: 1 1 50%;
-    padding-top: 10px;
-    padding-bottom: 20px;
-    border-bottom: 3px solid #f2f2f2;
-    border-top: none;
-    /* border: 3px solid black; */
-  }
-  /* Bordure de sélection bleu */
-
-  #wrapper > header > nav > ul > li:nth-child(1):hover {
-    border-bottom: 3px solid #0065fc;
-    border-top: none;
-    color: #0065fc; /*voir avec Pierre pourquoi la colour bleu ne passe pas*/
-  }
-
-  #wrapper > header > nav > ul > li:nth-child(2):hover {
-    border-bottom: 3px solid #0065fc;
-    border-top: none;
-  }
-
-  .logo {
-    flex-grow: 6;
-    max-width: 100%;
-    align-self: center;
-    padding: 30px 0px 30px 20px;
-  }
-  .login {
-    padding: 47px 20px 40px 0px;
-  }
-  #recherche {
-    padding: 20px;
-  }
-
-
-
-  #wrapper > header > nav > ul {
-    padding: 0px;
-  }
+  cursor: grab;
 }
 
 /*SECTION 1 RECHERCHE + FILTRE*/
@@ -269,7 +190,7 @@ button {
 
 .logos {
   border: 3px solid #f2f2f2;
-  width: 220px;
+  /* width: 220px; */
   border-radius: 50px;
   display: flex;
   align-items: center;
@@ -290,7 +211,7 @@ li:hover .logofiltre {
   background: #deebff;
   border-radius: 50px;
   padding: 16px;
-  width: 30px;
+  /* width: 30px; */
   text-align: center;
 }
 
@@ -302,4 +223,92 @@ li:hover .logofiltre {
 
 #titre_filtres {
   margin: 10px 10px 0 0;
+}
+/* MOBILE */
+
+@media screen and (max-width: 600px) {
+  /* Propriétés Générales pour mobile */
+
+  h1 {
+    font-weight: 700;
+    font-style: bold;
+    font-size: 1.4rem;
+  }
+
+  /*SECTION 1 RECHERCHE + FILTRE*/
+
+  #recherche > h1 {
+    padding: 0 0 20px;
+  }
+
+  #bouton_rechercher{
+    display: none;
+   
+  }
+
+  .navbar-container {
+    flex-wrap: wrap;
+  }
+  .navbar-container ul {
+    display: flex;
+    width: 100%;
+    text-align: center;
+    order: 1;
+  }
+
+  #wrapper {
+    padding-left: 0px;
+  }
+
+  #wrapper > header > nav > ul > li:nth-child(1) {
+    flex: 1 1 50%;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    border-bottom: 3px solid #f2f2f2;
+    border-top: none;
+  }
+
+  #wrapper > header > nav > ul > li:nth-child(2) {
+    flex: 1 1 50%;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    border-bottom: 3px solid #f2f2f2;
+    border-top: none;
+    /* border: 3px solid black; */
+  }
+  /* Bordure de sélection bleu */
+
+  #wrapper > header > nav > ul > li:nth-child(1):hover {
+    border-bottom: 3px solid #0065fc;
+    border-top: none;
+    color: #0065fc; /*voir avec Pierre pourquoi la colour bleu ne passe pas*/
+  }
+
+  #wrapper > header > nav > ul > li:nth-child(2):hover {
+    border-bottom: 3px solid #0065fc;
+    border-top: none;
+  }
+
+  .logo {
+    flex-grow: 6;
+    max-width: 100%;
+    align-self: center;
+    padding: 30px 0px 30px 20px;
+  }
+  .login {
+    padding: 47px 20px 40px 0px;
+  }
+  #recherche {
+    padding: 20px;
+    
+    
+  }
+
+  #wrapper > header > nav > ul {
+    padding: 0px;
+  }
+  #loupe {
+    display: initial;
+    border-radius: 10px;
+  }
 }
