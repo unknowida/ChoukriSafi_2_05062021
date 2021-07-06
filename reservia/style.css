@@ -120,19 +120,17 @@ a:hover {
 /* MOBILE */
 
 @media screen and (max-width: 600px) {
-
   /* Propriétés Générales pour mobile */
 
   h1 {
-    font-weight:  700;
+    font-weight: 700;
     font-style: bold;
     font-size: 1.4rem;
   }
 
-
   /*SECTION 1 RECHERCHE + FILTRE*/
 
-  #recherche > h1{
+  #recherche > h1 {
     padding: 0 0 20px;
   }
 
@@ -191,15 +189,17 @@ a:hover {
   #recherche {
     padding: 20px;
   }
+
+
+
   #wrapper > header > nav > ul {
     padding: 0px;
   }
-  
 }
 
 /*SECTION 1 RECHERCHE + FILTRE*/
 
-#recherche > h1{
+#recherche > h1 {
   padding: 0 0 20px;
 }
 
@@ -247,4 +247,59 @@ button {
 
 #loupe {
   display: none;
+}
+
+#filtres {
+  display: flex;
+  flex-direction: row;
+  font-weight: bold;
+  padding: 0;
+  list-style-type: none;
+  margin: 10px 0;
+  font-size: 18px;
+  flex-wrap: wrap;
+}
+
+#box_filtres {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  flex-flow: row wrap;
+}
+
+.logos {
+  border: 3px solid #f2f2f2;
+  width: 220px;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  margin: 10px 10px 0 0;
+}
+
+li:hover .logofiltre {
+  cursor: pointer;
+  background-color: white;
+}
+.logos:hover {
+  background-color: #deebff;
+}
+
+.logofiltre {
+  color: #0065fc;
+  font-size: 1.4em;
+  background: #deebff;
+  border-radius: 50px;
+  padding: 16px;
+  width: 30px;
+  text-align: center;
+}
+
+.nom_filtre {
+  padding-left: 10px;
+  font-size: 16px;
+  margin: 0 10px 0 0;
+}
+
+#titre_filtres {
+  margin: 10px 10px 0 0;
 }
