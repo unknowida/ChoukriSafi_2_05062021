@@ -85,11 +85,6 @@ header {
   justify-content: center;
 }
 
-a.active,
-a:hover {
-  /* color: #0065fc; */
-}
-
 #wrapper > header > nav > ul > li:nth-child(1):hover {
   border-top: 3px solid #0065fc;
 
@@ -100,9 +95,6 @@ a:hover {
 #wrapper > header > nav > ul > li:nth-child(2):hover {
   border-top: 3px solid #0065fc;
   /* text-decoration-color: #0065fc; */
-}
-.navbar-container ul li a {
-  /* color: black; */
 }
 
 /* Selecteur DE SECTION Bordure bleu */
@@ -177,7 +169,6 @@ button {
   padding: 0;
   list-style-type: none;
   margin: 10px 0;
-  font-size: 18px;
   flex-wrap: wrap;
 }
 
@@ -194,7 +185,8 @@ button {
   border-radius: 50px;
   display: flex;
   align-items: center;
-  margin: 10px 10px 0 0;
+  justify-content: space-evenly;
+  margin: 20px 10px 0 0;
 }
 
 li:hover .logofiltre {
@@ -207,7 +199,7 @@ li:hover .logofiltre {
 
 .logofiltre {
   color: #0065fc;
-  font-size: 1.4em;
+  /* font-size: 1.4em; */
   background: #deebff;
   border-radius: 50px;
   padding: 16px;
@@ -217,7 +209,7 @@ li:hover .logofiltre {
 
 .nom_filtre {
   padding-left: 10px;
-  font-size: 16px;
+  /* font-size: 16px; */
   margin: 0 10px 0 0;
 }
 
@@ -241,9 +233,8 @@ li:hover .logofiltre {
     padding: 0 0 20px;
   }
 
-  #bouton_rechercher{
+  #bouton_rechercher {
     display: none;
-   
   }
 
   .navbar-container {
@@ -300,8 +291,6 @@ li:hover .logofiltre {
   }
   #recherche {
     padding: 20px;
-    
-    
   }
 
   #wrapper > header > nav > ul {
