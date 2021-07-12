@@ -31,11 +31,11 @@ p {
 
 /* Partie Header */
 
-#wrapper {
+/* #wrapper {
   margin: 0 auto 0 auto;
   max-width: 1440px;
   padding-left: 30px;
-}
+} */
 
 header {
   display: flex;
@@ -240,8 +240,48 @@ li:hover .logofiltre {
   margin: 0 10px 0 0;
 }
 
+/* INFO ICON */
 .info {
+  display: flex;
+  align-items: center;
   color: #0065fc;
+}
+
+.fa-info:before {
+  content: '\f129';
+  padding: 5px;
+  size: 1rem;
+}
+.fa,
+.fas {
+  font-weight: 200;
+}
+
+.aspectIconInfo {
+  width: 20px;
+  height: 20px;
+  border: 2px solid grey;
+  border-radius: 25px;
+  margin: 5px;
+  display: flex;
+  align-items: center;
+}
+
+.détails-info {
+  display: flex;
+  align-items: center;
+  color: black;
+}
+
+.content {
+  margin: 0 auto 0 auto;
+  padding: 0 2em 0 2em;
+  width: 100%;
+  max-width: 70rem;
+  margin-inline: auto;
+  display: flex;
+  gap: 1em;
+  flex-direction: column;
 }
 
 /* MOBILE */
@@ -265,8 +305,9 @@ li:hover .logofiltre {
     order: 1;
   }
 
-  #wrapper {
+  .content {
     padding-left: 0px;
+    padding-right: 0px;
   }
 
   #wrapper > header > nav > ul > li:nth-child(1) {
