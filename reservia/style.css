@@ -277,11 +277,27 @@ li:hover .logofiltre {
   margin: 0 auto 0 auto;
   padding: 0 2em 0 2em;
   width: 100%;
-  max-width: 70rem;
+  max-width: 75rem;
   margin-inline: auto;
   display: flex;
   gap: 1em;
   flex-direction: column;
+}
+
+#cartes-héb {
+  background-color: #f2f2f2;
+  border-radius: 20px;
+}
+
+#cartes-popu {
+  background-color: #f2f2f2;
+  border-radius: 20px;
+}
+
+@container (min-width:25rem) {
+  .card img {
+    display: none;
+  }
 }
 
 /* MOBILE */
