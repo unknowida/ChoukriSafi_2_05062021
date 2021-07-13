@@ -20,111 +20,138 @@
 </head>
 
 <body>
-  <div class="content">
-    <div id="wrapper">
-      <header>
-        <nav class="navbar-container">
-          <div class="logo">
-            <img src="images/logo/Reservia.svg" alt="logo Reservia" />
-          </div>
-          <ul>
-            <li>
-              <div class="Héb">
-                <a href="#">Hébergements</a>
-              </div>
-            </li>
-            <li>
-              <div class="Act">
-                <a href="#">Activités</a>
-              </div>
-            </li>
-          </ul>
-          <button class="login" type="button">S'inscrire</button>
-        </nav>
-      </header>
 
-      <section id="recherche">
-        <!--Section de recherche hébergement-->
-        <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
-        <p>En plein centre ville ou en pleine nature</p>
-        <br />
-        <div class="bouton_recherche">
-          <i class="fas fa-map-marker-alt ici"></i>
-          <input type="search" id="rechercher" name="Rechercher" placeholder="Marseille, France" />
-          <button id="bouton_rechercher">Rechercher</button>
-          <button id="loupe"><i class="fas fa-search"></i></button>
+  <div id="content">
+    <header>
+      <nav class="navbar-container">
+        <div class="logo">
+          <img src="images/logo/Reservia.svg" alt="logo Reservia" />
         </div>
-        <br />
-        <br />
-        <br />
-        <div id="box_filtres">
-          <h3 id="titre_filtres">Filtres</h3>
-          <br />
-          <ul id="filtres">
-            <li class="logos">
-              <i class="fas fa-money-bill-wave logofiltre"></i>
-              <h3 class="nom_filtre">Economique</h3>
-            </li>
-            <li class="logos">
-              <i class="fas fa-child logofiltre"></i>
-              <h3 class="nom_filtre">Familial</h3>
-            </li>
-            <li class="logos">
-              <i class="fas fa-heart logofiltre"></i>
-              <h3 class="nom_filtre">Romantique</h3>
-            </li>
-            <li class="logos">
-              <i class="fas fa-dog logofiltre"></i>
-              <h3 class="nom_filtre">Animaux autorisés</h3>
-            </li>
-          </ul>
-        </div>
-      </section><br>
-      <div class="info">
-        <div><i class="fas fa-info aspectIconInfo"></i>
-        </div>
-        <p class="détails-info">Plus de 500 logements sont disponibles dans cette ville</p>
+        <ul>
+          <li>
+            <div class="Héb">
+              <a href="#">Hébergements</a>
+            </div>
+          </li>
+          <li>
+            <div class="Act">
+              <a href="#">Activités</a>
+            </div>
+          </li>
+        </ul>
+        <button class="login" type="button">S'inscrire</button>
+      </nav>
+    </header>
+
+    <section id="recherche">
+      <!--Section de recherche hébergement-->
+      <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
+      <p>En plein centre ville ou en pleine nature</p>
+
+      <div class="bouton_recherche">
+        <i class="fas fa-map-marker-alt ici"></i>
+        <input type="search" id="rechercher" name="Rechercher" placeholder="Marseille, France" />
+        <button id="bouton_rechercher">Rechercher</button>
+        <button id="loupe"><i class="fas fa-search"></i></button>
+      </div>
+      <br />
+      <br />
+      <br>
+
+      <div id="box_filtres">
+        <h3 id="titre_filtres">Filtres</h3>
+        <ul id="filtres">
+          <li class="logos">
+            <i class="fas fa-money-bill-wave logofiltre"></i>
+            <h3 class="nom_filtre">Economique</h3>
+          </li>
+          <li class="logos">
+            <i class="fas fa-child logofiltre"></i>
+            <h3 class="nom_filtre">Familial</h3>
+          </li>
+          <li class="logos">
+            <i class="fas fa-heart logofiltre"></i>
+            <h3 class="nom_filtre">Romantique</h3>
+          </li>
+          <li class="logos">
+            <i class="fas fa-dog logofiltre"></i>
+            <h3 class="nom_filtre">Animaux autorisés</h3>
+          </li>
+        </ul>
       </div><br>
-      <section id="cartes-héb">
-        <h1>Hébergements à Marseille</h1><br>
+    </section>
+    <div class="info">
+      <div><i class="fas fa-info aspectIconInfo"></i>
+      </div>
+      <p class="détails-info">Plus de 500 logements sont disponibles dans cette ville</p>
+    </div><br>
 
-        <div class="cartes-héb-popu">
-          <img src="reservia/images/hebergements/1_xlarge/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="">
-          <h4>Auberge la Cannebière</h4>
-          <h5>Nuit à partir de 25$</h5>
+    <section id="Cartes-héb-X6">
+      <!-- Section présentation de 6 hébergements type -->
+      <div id="Marseille">
+        <h1>Hébergements à Marseille</h1>
+        <div class="carte1">
+          <!-- Hébergements à Marseille -->
+          <img class="img-héb" src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg"
+            alt="Auberge La Cannebière">
+          <h4 class="lieudit">Auberge la Cannebière</h4>
+          <h5 class="prix">Nuit à partir de 25€</h5>
+          <div class="etoiles">
+            <i class="fas fa-star etoilesbleue"></i>
+            <i class="fas fa-star etoilesbleue"></i>
+            <i class="fas fa-star etoilesbleue"></i>
+            <i class="fas fa-star etoilesbleue"></i>
+            <i class="fas fa-star etoilesgrise"></i>
+          </div>
         </div>
 
+        <div class="carte2">
+          <img class="img-héb" src="images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg"
+            alt="Hôtel du port" />
+          <h4>Hôtel du port</h4>
+          <h5>Nuit à partir de 52€</h5>
+          <div class="etoiles">
+            <i class="fas fa-star etoilesbleue"></i>
+            <i class="fas fa-star etoilesbleue"></i>
+            <i class="fas fa-star etoilesbleue"></i>
+            <i class="fas fa-star etoilesbleue"></i>
+            <i class="fas fa-star etoilesbleue"></i>
+          </div>
+        </div>
+        <div class="carte3">
+          <h4>Hôtel Les mouettes</h4>
+          <h5>Nuit à partir de 76€</h5>
+        </div>
 
-        <h4>Hôtel du port</h4>
-        <h5>Nuit à partir de 52$</h5>
+        <div class="carte4">
+          <h4>Hôtel de la mer</h4>
+          <h5>Nuit à partir de 46€</h5>
+        </div>
+        <div class="carte5">
+          <h4>Hôtel Le Panier</h4>
+          <h5>Nuit à partir de 23€</h5>
+        </div>
+        <div class="carte6">
+          <h4>Hôtel chez Amina</h4>
+          <h5>Nuit à partir de 96€</h5>
+        </div>
+      </div>
 
-        <h4>Hôtel Les mouettes</h4>
-        <h5>Nuit à partir de 76$</h5>
-
-        <h4>Hôtel de la mer</h4>
-        <h5>Nuit à partir de 46$</h5>
-
-        <h4>Hôtel Le Panier</h4>
-        <h5>Nuit à partir de 23$</h5>
-
-        <h4>Hôtel chez Amina</h4>
-        <h5>Nuit à partir de 96$</h5>
-      </section><br>
-
-      <section id="cartes-popu">
-        <h1>Les plus populaires</h1><br>
+    </section>
+    <aside id="Cartes-popu-X3">
+      <h1>Les plus populaires</h1>
+      <div class="carte">
 
         <h4>Hotel le soleil du matin</h4>
-        <h5>Nuit à partir de 128$</h5>
+        <h5>Nuit à partir de 128€</h5>
 
         <h4>Au coeur de l'eau Chambres d'hôtes</h4>
-        <h5>Nuit à partir de 71$</h5>
+        <h5>Nuit à partir de 71€</h5>
 
         <h4>Hôtel Tout bleu et Blanc</h4>
-        <h5>Nuit à partir de 68$</h5>
-
-      </section>
-    </div>
+        <h5>Nuit à partir de 68€</h5>
+      </div>
+    </aside>
   </div>
 
 
