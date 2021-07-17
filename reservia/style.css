@@ -310,8 +310,12 @@ li:hover .logofiltre {
   flex-wrap: wrap;
   justify-content: center;
   gap: 16px;
+  /* align-items: flex-start; */
+  /* align-content: stretch; */
   background-color: #f2f2f2;
   max-width: 850px;
+  border-radius: 25px;
+  /* max-width: 420px; */
   /* margin: 20px; */
   border-radius: 20px;
 }
@@ -325,20 +329,9 @@ li:hover .logofiltre {
   /* margin: 20px 320px 20px 20px; */
 }
 
-.Titre-héb{
+.Titre-héb {
   display: flex;
   /* justify-content: center; */
-}
-
-.container-héb {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 16px;
-  align-items: flex-start;
-  align-content: stretch;
-  border-radius: 25px;
-  /* padding: 40px; */
-  max-width: 420px;
 }
 
 img.img-héb {
@@ -351,8 +344,7 @@ img.img-héb {
   margin: auto;
 }
 
-
-.Afficherplus{
+.Afficherplus {
   display: flex;
   padding: 30px 20px 40px 30px;
   flex: 1 1 100%;
@@ -366,7 +358,6 @@ img.img-héb {
 } */
 
 /* --- SECTION x3 Lieux Populaires selon Ville  --- */
-
 
 #Cartes-popu-X3 {
   display: flex;
@@ -388,18 +379,7 @@ img.img-héb {
   /* margin: 20px 320px 20px 20px; */
 }
 
-.container-popu  {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 16px;
-  align-items: flex-start;
-  align-content: stretch;
-  border-radius: 25px;
-  /* padding: 40px; */
-  max-width: 420px;
-}
-
-.Titre-popu{
+.Titre-popu {
   display: flex;
   /* justify-content: center; */
 }
@@ -416,7 +396,7 @@ img.img-popu {
 
 /*Flex Section Popu + Héb*/
 
-.Container-héb-popu{
+.Container-héb-popu {
   display: flex;
   justify-content: center;
   gap: 30px;
