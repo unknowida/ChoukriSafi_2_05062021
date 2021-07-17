@@ -284,6 +284,25 @@ li:hover .logofiltre {
 
 /* --- Design de Cartes --- */
 
+/* ---GEneral config Cartes---*/
+
+.carte {
+  flex-direction: column;
+  /* max-width: 850px; */
+  height: 200px;
+  background-color: white;
+  padding: 5px;
+  border-radius: 20px;
+  box-shadow: 1px 1px 12px #797b80;
+}
+
+.etoilesbleue {
+  color: #0065fc;
+}
+.etoilesgrise {
+  color: #f2f2f2;
+}
+
 /* -- SECTION x6 Lieux Hébergement selon Ville -- */
 
 #Cartes-héb-X6 {
@@ -322,16 +341,6 @@ li:hover .logofiltre {
   max-width: 420px;
 }
 
-.carte {
-  flex-direction: column;
-  /* max-width: 850px; */
-  height: 200px;
-  background-color: white;
-  padding: 5px;
-  border-radius: 20px;
-  box-shadow: 1px 1px 12px #797b80;
-}
-
 img.img-héb {
   display: flex;
   max-width: 235px;
@@ -342,12 +351,7 @@ img.img-héb {
   margin: auto;
 }
 
-.etoilesbleue {
-  color: #0065fc;
-}
-.etoilesgrise {
-  color: #f2f2f2;
-}
+
 .Afficherplus{
   display: flex;
   padding: 30px 20px 40px 30px;
@@ -368,31 +372,55 @@ img.img-héb {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  /* gap: 16px; */
+  gap: 16px;
   background-color: #f2f2f2;
-  /* max-width: 850px; */
+  max-width: 400px;
   /* margin: 20px; */
   border-radius: 20px;
 }
 
+#Cartes-popu-X3 > h2:nth-child(1) {
+  display: flex;
+  padding: 40px 20px 20px 30px;
+  flex: 1 1 100%;
+  align-items: center;
+  text-align: center;
+  /* margin: 20px 320px 20px 20px; */
+}
 
-.container-popu > * {
-   display: flex;
+.container-popu  {
+  display: flex;
   flex-wrap: wrap;
   gap: 16px;
   align-items: flex-start;
   align-content: stretch;
-  justify-content: right;
   border-radius: 25px;
+  /* padding: 40px; */
   max-width: 420px;
 }
 
-.popu{
-    display: flex;
-    /* justify-content: center; */
-  
+.Titre-popu{
+  display: flex;
+  /* justify-content: center; */
 }
 
+img.img-popu {
+  display: flex;
+  max-width: 235px;
+  width: 100%;
+  height: 115px;
+  border-radius: 15px 15px 0px 0px;
+  object-fit: cover;
+  margin: auto;
+}
+
+/*Flex Section Popu + Héb*/
+
+.Container-héb-popu{
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
 
 @container (min-width:25rem) {
   #Cartes-héb-X6 img {
