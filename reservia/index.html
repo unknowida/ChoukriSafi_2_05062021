@@ -55,9 +55,9 @@
       </div>
       <br />
       <br />
-      <div id="box_filtres">
-        <h3 id="titre_filtres">Filtres</h3>
-        <ul id="filtres">
+      <div class="box_filtres">
+        <h3 class="titre_filtres">Filtres</h3>
+        <ul class="filtres">
           <li class="logos">
             <i class="fas fa-money-bill-wave logofiltre"></i>
             <h3 class="nom_filtre">Economique</h3>
@@ -88,7 +88,7 @@
         <!-- Section présentation de 6 hébergements type -->
         <h2 class="Titre-héb">Hébergements à Marseille</h2>
 
-        <div class="carte">
+        <div class="carte-heb">
           <!-- Hébergements à Marseille -->
           <img class="img-héb" src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg"
             alt="Auberge La Cannebière">
@@ -103,8 +103,7 @@
           </div>
         </div>
 
-
-        <div class="carte">
+        <div class="carte-heb">
           <img class="img-héb" src="images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg"
             alt="Hôtel du port" />
           <h4>Hôtel du port</h4>
@@ -117,26 +116,26 @@
             <i class="fas fa-star etoilesbleue"></i>
           </div>
         </div>
-        <div class="carte">
+        <div class="carte-heb">
           <img class="img-héb" src="images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg"
             alt="Hôtel Les mouettes">
           <h4>Hôtel Les mouettes</h4>
           <h5>Nuit à partir de 76€</h5>
         </div>
 
-        <div class="carte">
+        <div class="carte-heb">
           <img class="img-héb" src="images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg"
             alt="Hôtel de la mer">
           <h4>Hôtel de la mer</h4>
           <h5>Nuit à partir de 46€</h5>
         </div>
-        <div class="carte">
+        <div class="carte-heb">
           <img class="img-héb" src="images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg"
             alt="Hôtel Le Panier">
           <h4>Hôtel Le Panier</h4>
           <h5>Nuit à partir de 23€</h5>
         </div>
-        <div class="carte">
+        <div class="carte-heb">
           <img class="img-héb" src="images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg"
             alt="Hôtel chez Amina">
           <h4>Hôtel chez Amina</h4>
@@ -146,29 +145,175 @@
       </section>
       <aside id="Cartes-popu-X3">
         <h2 class="Titre-popu">Les plus populaires</h2>
-        <!-- Section présentation de 3 hébergements populaires -->
-        <div class="carte">
-          <img class="img-popu" src="images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg"
-            alt="Hotel le soleil du matin">
-          <h4>Hotel le soleil du matin</h4>
-          <h5>Nuit à partir de 128€</h5>
-        </div>
+        <i class="fas fa-chart-line graphique" aria-hidden="true" <!-- Section présentation de 3 hébergements populaires
+          -->
+          <div class="carte-popu">
+            <img class="img-popu" src="images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg"
+              alt="Hotel le soleil du matin">
+            <div class="details-pop-carte">
+              <h4>Hotel le soleil du matin</h4>
+              <h5>Nuit à partir de 128€</h5>
+            </div>
+          </div>
 
-        <div class="carte">
-          <img class="img-popu" src="images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg"
-            alt="Au coeur de l'eau Chambres d'hôtes">
-          <h4>Au coeur de l'eau Chambres d'hôtes</h4>
-          <h5>Nuit à partir de 71€</h5>
-        </div>
-        <div class="carte">
-          <img class="img-popu" src="images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg"
-            alt="Hôtel Tout bleu et Blanc">
-          <h4>Hôtel Tout bleu et Blanc</h4>
-          <h5>Nuit à partir de 68€</h5>
-        </div>
-
+          <div class="carte-popu">
+            <img class="img-popu" src="images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg"
+              alt="Au coeur de l'eau Chambres d'hôtes">
+            <div class="details-pop-carte">
+              <h4>Au coeur de l'eau Chambres d'hôtes</h4>
+              <h5>Nuit à partir de 71€</h5>
+            </div>
+          </div>
+          <div class="carte-popu">
+            <img class="img-popu" src="images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg"
+              alt="Hôtel Tout bleu et Blanc">
+            <div class="details-pop-carte">
+              <h4>Hôtel Tout bleu et Blanc</h4>
+              <h5>Nuit à partir de 68€</h5>
+            </div>
+          </div>
       </aside>
     </div>
+    <section class="activites">
+      <!--Activités à Marseille-->
+      <h2 class="titre_activite">Activités à Marseille</h2>
+      <div class="bloc_activites">
+        <div>
+          <a href="#">
+            <figure id="vignette1">
+              <img id="photo1" src="images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg"
+                alt="Vieux Port" />
+              <figcaption>
+                <h3 class="titre" id="intitule1">Vieux Port</h3>
+              </figcaption>
+            </figure>
+          </a>
+        </div>
+        <div>
+          <a href="#">
+            <figure id="vignette2">
+              <img id="photo2" src="images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg"
+                alt="Fort de Pomègues" />
+              <figcaption>
+                <h3 class="titre" id="intitule2">Fort de Pomègues</h3>
+              </figcaption>
+            </figure>
+          </a>
+          <a href="#">
+            <figure id="vignette3">
+              <img id="photo3" src="images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg"
+                alt="Iles de Frioul" />
+              <figcaption>
+                <h3 class="titre" id="intitule3">Iles de Frioul</h3>
+              </figcaption>
+            </figure>
+          </a>
+        </div>
+        <div>
+          <a href="#">
+            <figure id="vignette4">
+              <img id="photo4" src="images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg"
+                alt="Parc National des Calanques" />
+              <figcaption>
+                <h3 id="intitule4">Parc National des Calanques</h3>
+              </figcaption>
+            </figure>
+          </a>
+        </div>
+        <div>
+          <a href="#">
+            <figure id="vignette5">
+              <img id="photo5" src="images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg"
+                alt="Notre-Dame-de-la-Garde" />
+              <figcaption>
+                <h3 id="intitule5">Notre-Dame-de-la-Garde</h3>
+              </figcaption>
+            </figure>
+          </a>
+          <a href="#">
+            <figure id="vignette6">
+              <img id="photo6" src="images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg"
+                alt="Parc Longchamp" />
+              <figcaption>
+                <h3 id="intitule6">Parc Longchamp</h3>
+              </figcaption>
+            </figure>
+          </a>
+        </div>
+      </div>
+      <div id="bloc_media">
+        <div class="vignette">
+          <a href="#">
+            <figure id="vignette11">
+              <img class="photo_activites" src="images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg"
+                alt="Vieux Port" />
+              <figcaption>
+                <h3 class="titre" id="intitule11">Vieux Port</h3>
+              </figcaption>
+            </figure>
+          </a>
+        </div>
+        <div class="vignette">
+          <a href="#">
+            <figure id="vignette12">
+              <img class="photo_activites" src="images/activites/3_medium/paul-hermann-QFTrLdQIRhI-unsplash.jpg"
+                alt="Fort de Pomègues" />
+              <figcaption>
+                <h3 class="titre" id="intitule12">Fort de Pomègues</h3>
+              </figcaption>
+            </figure>
+          </a>
+        </div>
+        <div class="vignette">
+          <a href="#">
+            <figure id="vignette13">
+              <img class="photo_activites" src="images/activites/3_medium/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg"
+                alt="Iles de Frioul" />
+              <figcaption>
+                <h3 class="titre" id="intitule13">Iles de Frioul</h3>
+              </figcaption>
+            </figure>
+          </a>
+        </div>
+        <div class="vignette">
+          <a href="#">
+            <figure id="vignette14">
+              <img class="photo_activites" src="images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg"
+                alt="Parc National des Calanques" />
+              <figcaption>
+                <h3 class="titre" id="intitule14">
+                  Parc National des Calanques
+                </h3>
+              </figcaption>
+            </figure>
+          </a>
+        </div>
+        <div class="vignette">
+          <a href="#">
+            <figure id="vignette15">
+              <img class="photo_activites" src="images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg"
+                alt="Notre-Dame-de-la-Garde" />
+              <figcaption>
+                <h3 class="titre" id="intitule15">
+                  Notre-Dame-de-la-Garde
+                </h3>
+              </figcaption>
+            </figure>
+          </a>
+        </div>
+        <div class="vignette">
+          <a href="#">
+            <figure id="vignette16">
+              <img class="photo_activites" src="images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg"
+                alt="Parc Longchamp" />
+              <figcaption>
+                <h3 class="titre" id="intitule16">Parc Longchamp</h3>
+              </figcaption>
+            </figure>
+          </a>
+        </div>
+      </div>
+    </section>
   </div>
 
 </body>
