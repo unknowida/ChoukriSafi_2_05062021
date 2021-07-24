@@ -1,6 +1,4 @@
-/* Propriétés Générales */
-
-* {
+Propriétés Générales * {
   box-sizing: border-box;
 }
 
@@ -72,6 +70,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-around;
+  align-self: start;
 }
 
 /* Hébérgements */
@@ -117,7 +116,7 @@ header {
 
 .login {
   display: flex;
-  padding: 47px 20px 50px 0px;
+  /* padding: 47px 20px 50px 0px; */
   font-weight: bold;
   border: none;
   background: none;
@@ -659,7 +658,7 @@ figure:hover {
 
   .photo_activites {
     width: 100%;
-    max-width: 420px;
+    max-width: 320px;
     max-height: 300px;
     height: 80%;
     object-fit: cover;
