@@ -9,31 +9,132 @@ body {
   margin: 0;
 }
 
-/* Cadrage de la page. */
-.container {
-  margin: 0 auto;
-  max-width: 1440px;
+a {
+  color: black;
+  text-decoration: none;
 }
 
-/*----HEADER----*/
+.inscription a:hover {
+  text-decoration: underline;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+@media screen and (min-width: 768px) {
+  /* Cadrage de la page. */
+  .container {
+    margin: 0 auto;
+    max-width: 1440px;
+  }
+
+  /*----HEADER----*/
+
+  nav {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .logo a {
+    display: block;
+  }
+  .inscription {
+    display: flex;
+  }
+  .inscription a {
+    align-items: center;
+    color: #0065fc;
+    display: flex;
+    font-weight: bold;
+    padding-right: 16px;
+  }
+}
+@media screen and (min-width: 768px) {
+  nav {
+    align-items: stretch;
+    flex-wrap: nowrap;
+    padding: 0;
+  }
+
+  .logo {
+    margin-right: auto;
+  }
+
+  .logo a {
+    padding: 16px 0;
+  }
+
+  .inscription {
+    order: 1;
+  }
+
+  .inscription a {
+    padding-right: 0;
+  }
+}
+
+/*---NAVigation---*/
 
 nav {
   display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  flex: 100%;
+}
+.header-nav {
+  display: flex;
+  flex: 1;
 }
 
-.logo a {
-  display: block;
-}
-.inscription {
+.nav-link-item a {
   display: flex;
+  flex: 1;
+  justify-content: center;
+  padding: 16px 0;
+  position: relative;
 }
-.inscription a {
-  align-items: center;
+
+.nav-link-item a::after {
+  background-color: #f2f2f2;
+  bottom: 0;
+  content: '';
+  height: 2px;
+  left: 0;
+  position: absolute;
+  right: 0;
+}
+
+.nav-link-item a:hover {
   color: #0065fc;
-  display: flex;
-  font-weight: bold;
-  padding-right: 16px;
+}
+
+.nav-link-item a:hover::after {
+  background-color: #0065fc;
+}
+
+@media screen and (min-width: 768px) {
+  .nav {
+    flex: 0;
+    padding: 0 16px;
+  }
+
+  .nav-link-item {
+    display: flex;
+    flex: 0;
+  }
+
+  .nav-link-item a::after {
+    background-color: transparent;
+    bottom: auto;
+    top: 0;
+  }
+
+  .nav-link-item a {
+    align-items: center;
+    display: flex;
+    padding: 0 32px;
+  }
 }
