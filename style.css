@@ -8,6 +8,17 @@ body {
   font-family: 'Raleway', sans-serif;
   margin: 0;
 }
+.container {
+  margin: 0 auto;
+  max-width: 1440px;
+}
+
+/* Cadrage de la page. */
+@media screen and (min-width: 768px) {
+  .container {
+    padding: 0 32px;
+  }
+}
 
 a {
   color: black;
@@ -24,36 +35,29 @@ ul {
   padding: 0;
 }
 
-@media screen and (min-width: 768px) {
-  /* Cadrage de la page. */
-  .container {
-    margin: 0 auto;
-    max-width: 1440px;
-  }
+/*----HEADER----*/
 
-  /*----HEADER----*/
-
-  nav {
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
-
-  .logo a {
-    display: block;
-  }
-  .inscription {
-    display: flex;
-  }
-  .inscription a {
-    align-items: center;
-    color: #0065fc;
-    display: flex;
-    font-weight: bold;
-    padding-right: 16px;
-  }
+nav {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
+
+.logo a {
+  display: block;
+}
+.inscription {
+  display: flex;
+}
+.inscription a {
+  align-items: center;
+  color: #0065fc;
+  display: flex;
+  font-weight: bold;
+  padding-right: 16px;
+}
+
 @media screen and (min-width: 768px) {
   nav {
     align-items: stretch;
@@ -80,7 +84,7 @@ ul {
 
 /*---NAVigation---*/
 
-nav {
+.nav-Heb-Act {
   display: flex;
   flex: 100%;
 }
@@ -116,7 +120,7 @@ nav {
 }
 
 @media screen and (min-width: 768px) {
-  .nav {
+  .nav-Heb-Act {
     flex: 0;
     padding: 0 16px;
   }
