@@ -142,3 +142,53 @@ nav {
     padding: 0 32px;
   }
 }
+
+/*------ H1 RECHERCHE ET FILTRES ------*/
+
+h1 span {
+  display: block;
+  font-size: 1rem;
+  font-weight: normal;
+  margin-top: 0.75rem;
+}
+
+/*--- RECHERCHE ---*/
+form {
+  margin: 2rem 0;
+}
+
+.form {
+  border-color: var(--tertiary-color);
+  border-radius: 1rem;
+  border-style: solid;
+  border-width: 1px;
+  display: flex;
+  height: 3rem;
+  max-width: 420px;
+}
+
+.form > * {
+  font-size: 1rem;
+}
+
+.form label,
+.form button {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  min-width: 3rem;
+  cursor: pointer;
+}
+label {
+  background-color: #f2f2f2;
+  border-radius: 1rem 0 0 1rem;
+  margin: -1px 0 0 -1px;
+}
+input {
+  border: 0;
+  font-weight: bold;
+  padding-left: 1rem;
+  min-width: 0;
+  flex: 1;
+  font-family: var(--font);
+}
