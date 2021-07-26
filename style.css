@@ -31,6 +31,7 @@ section {
 }
 h1 {
   margin: 0;
+  font-weight: bold;
 }
 
 a {
@@ -177,7 +178,7 @@ form {
 
 .form {
   border-color: #f2f2f2;
-  border-radius: 1rem;
+  border-radius: 16px;
   border-style: solid;
   border-width: 1px;
   display: flex;
@@ -194,7 +195,7 @@ form {
   align-items: center;
   display: flex;
   justify-content: center;
-  min-width: 3rem;
+  min-width: 48px;
   cursor: pointer;
 }
 label {
@@ -205,10 +206,10 @@ label {
 input {
   border: 0;
   font-weight: bold;
-  padding-left: 1rem;
+  padding-left: 16px;
   min-width: 0;
   flex: 1;
-  font-family: var(--font);
+  font-family: 'Raleway', sans-serif;
 }
 
 ::placeholder {
@@ -220,7 +221,7 @@ button {
   background-color: #0065fc;
   border: 0;
   border-radius: 1rem;
-  color:white;
+  color: white;
   margin: -1px -1px 0 0;
   padding: 0;
 }
@@ -241,4 +242,72 @@ button span {
     display: inline;
     padding: 0 1rem;
   }
+}
+
+/* ---- Filtre ---- */
+
+.filtres {
+  align-items: baseline;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.filtres h3 {
+  margin: 0 32px 8px 0;
+}
+
+.filtres-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.filtres-list-item {
+  align-items: center;
+  border: 2px solid #f2f2f2;
+  border-radius: 28px;
+  cursor: pointer;
+  display: flex;
+  height: 48px;
+  margin-top: 12px;
+}
+
+@media screen and (min-width: 768px) {
+  .filtres-list-item {
+    margin-right: 20px;
+  }
+
+  .filtres-list-item:last-of-type {
+    margin-right: 0;
+  }
+}
+
+.filtres-list-item div {
+  align-items: center;
+  background-color: #deebff;
+  border-radius: 50%;
+  display: flex;
+  height: calc(100% + 4px);
+  justify-content: center;
+  margin-left: -2px;
+  width: 48px;
+}
+
+.filtres-list-item i {
+  font-size: 20px;
+}
+
+.filtres-list-item span {
+  font-weight: bold;
+  padding: 0 16px;
+}
+
+.filtres-list-item:hover {
+  background-color: #f2f2f2;
+  border-color: #f2f2f2;
+  color: #0065fc;
+}
+.filtres-list-item i,
+.information i {
+  color:  #0065fc;
 }
