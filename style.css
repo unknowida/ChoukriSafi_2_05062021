@@ -13,11 +13,24 @@ body {
   max-width: 1440px;
 }
 
+section {
+  padding: 32px 24px;
+}
+
 /* Cadrage de la page. */
 @media screen and (min-width: 768px) {
   .container {
     padding: 0 32px;
   }
+  section {
+    padding: 48px 32px;
+  }
+  .search-filters {
+    padding: 48px 0;
+  }
+}
+h1 {
+  margin: 0;
 }
 
 a {
@@ -93,6 +106,11 @@ nav {
   flex: 1;
 }
 
+.nav-link-item {
+  display: flex;
+  flex: 1;
+}
+
 .nav-link-item a {
   display: flex;
   flex: 1;
@@ -149,7 +167,7 @@ h1 span {
   display: block;
   font-size: 1rem;
   font-weight: normal;
-  margin-top: 0.75rem;
+  margin-top: 12px;
 }
 
 /*--- RECHERCHE ---*/
@@ -158,12 +176,12 @@ form {
 }
 
 .form {
-  border-color: var(--tertiary-color);
+  border-color: #f2f2f2;
   border-radius: 1rem;
   border-style: solid;
   border-width: 1px;
   display: flex;
-  height: 3rem;
+  height: 48px;
   max-width: 420px;
 }
 
@@ -191,4 +209,36 @@ input {
   min-width: 0;
   flex: 1;
   font-family: var(--font);
+}
+
+::placeholder {
+  color: black;
+  opacity: 1;
+}
+
+button {
+  background-color: #0065fc;
+  border: 0;
+  border-radius: 1rem;
+  color:white;
+  margin: -1px -1px 0 0;
+  padding: 0;
+}
+button span {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .form button {
+    border-radius: 0 16px 16px 0;
+  }
+
+  .form button i {
+    display: none;
+  }
+
+  button span {
+    display: inline;
+    padding: 0 1rem;
+  }
 }
