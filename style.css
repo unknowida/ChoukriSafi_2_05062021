@@ -29,7 +29,7 @@ section {
     padding: 48px 0;
   }
 }
-h1 {
+h1,h2,h3 {
   margin: 0;
   font-weight: bold;
 }
@@ -178,7 +178,7 @@ h1 span {
 
 /*- RECHERCHE DESKTOP -*/
 form {
-  margin: 2rem 0;
+  margin: 16px 0;
 }
 
 .form {
@@ -205,7 +205,7 @@ form {
 }
 label {
   background-color: #f2f2f2;
-  border-radius: 1rem 0 0 1rem;
+  border-radius: 16px 0 0 16px;
   margin: -1px 0 0 -1px;
 }
 input {
@@ -225,7 +225,7 @@ input {
 button {
   background-color: #0065fc;
   border: 0;
-  border-radius: 1rem;
+  border-radius: 16px;
   color: white;
   margin: -1px -1px 0 0;
   padding: 0;
@@ -247,7 +247,7 @@ button span {
 
   button span {
     display: inline;
-    padding: 0 1rem;
+    padding: 0 16px;
   }
 }
 
@@ -393,7 +393,7 @@ button span {
   }
 }
 
-/* CARDS LAYOUT  */
+/* CARDS LAYOUT DESKTOP */
 
 .cards {
   margin-top: 32px;
@@ -433,7 +433,7 @@ button span {
 
 .activites .card {
   padding: 0;
-  margin-bottom: 1.5rem;
+  margin-bottom: 24px;
 }
 .populaires .card:last-of-type,
 .hebergements .card:last-of-type,
@@ -444,3 +444,80 @@ button span {
 .activites .card {
   height: 200px;
 }
+
+.populaires .card-img {
+  /* max-width: 40%; */
+  flex: 1;
+}
+.hebergements .card-img {
+  height: 115px;
+}
+
+.activites .card-img {
+  height: calc(100% - 48px);
+}
+
+.card-img img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.populaires .card-img img {
+  border-radius: 16px 0 0 16px;
+}
+
+.hebergements .card-img img,
+.activites .card-img img {
+  border-radius: 16px 16px 0 0;
+}
+
+.card-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  font-size: 14px;
+  flex: 1;
+}
+.populaires .card-content {
+  padding: 0 20px;
+}
+
+.hebergements .card-content {
+  padding: 0 16px;
+}
+
+.card strong {
+  font-size: 1rem;
+  display: block;
+  max-height: 40px;
+  overflow: hidden;
+}
+
+.card p {
+  max-height: 32px;
+  overflow: hidden;
+}
+
+.activites .card-content {
+  height: 48px;
+  padding-left: 18px;
+}
+
+.populaires .card-content p {
+  margin-top: 8px;
+}
+
+.card i {
+  color: #f2f2f2;
+  font-size: 0.75rem;
+  letter-spacing: -3px;
+}
+
+.card .blue {
+  color: #0065fc;
+}
+
+/* CARDS LAYOUT MOBILE */
+
+
