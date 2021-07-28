@@ -13,7 +13,8 @@ body {
   max-width: 1440px;
 }
 
-section {
+section,
+aside {
   padding: 32px 24px;
 }
 
@@ -22,14 +23,17 @@ section {
   .container {
     padding: 0 32px;
   }
-  section {
+  section,
+  aside {
     padding: 48px 32px;
   }
   .search-filters {
     padding: 48px 0;
   }
 }
-h1,h2,h3 {
+h1,
+h2,
+h3 {
   margin: 0;
   font-weight: bold;
 }
@@ -520,4 +524,113 @@ button span {
 
 /* CARDS LAYOUT MOBILE */
 
+@media screen and (min-width: 768px) {
+  .hebergements .cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 0;
+  }
 
+  .populaires .card {
+    margin-bottom: 32px;
+  }
+
+  .hebergements .card {
+    width: 250px;
+    margin: 32px auto 0;
+  }
+
+  .card-group {
+    height: 450px;
+    flex-wrap: wrap;
+    flex: 1 100%;
+    align-content: space-between;
+    justify-content: space-between;
+  }
+
+  .card-group:first-of-type {
+    margin-bottom: 32px;
+  }
+
+  .activites .card {
+    max-width: calc(50% - 40px / 2);
+    margin: 0;
+  }
+
+  .activites .card {
+    height: calc(50% - 40px / 2);
+  }
+
+  .card.full {
+    height: 100%;
+  }
+
+  .card.big {
+    height: calc(100% - 165px - 40px);
+  }
+
+  .card.small {
+    height: 165px;
+  }
+
+  .activites .card-img {
+    flex: 1;
+  }
+
+  .activites .card-content {
+    max-height: 48px;
+  }
+}
+
+/*CARDS LAYOUT FORMAT TABLETTE ajustement visuelle responsive*/
+
+@media screen and (min-width: 1200px) {
+  .card-group {
+    flex: 1 calc(50% - 20px);
+  }
+
+  .card-group:last-of-type {
+    margin-left: 40px;
+  }
+}
+
+/*---------- PARTIE FOOTER DESKTOP ---------*/
+
+footer {
+  background-color: #f2f2f2;
+  padding-top: 0;
+}
+
+footer .container {
+  padding-top: 0;
+}
+
+footer div {
+  padding-top: 32px;
+}
+
+footer h3 {
+  margin-top: 0;
+}
+
+footer ul {
+  margin-top: 16px;
+}
+
+footer li {
+  margin-bottom: 8px;
+}
+
+/*---------- PARTIE FOOTER MOBILE ---------*/
+
+@media screen and (min-width: 768px) {
+  footer .container {
+    display: flex;
+  }
+
+  footer div {
+    flex: 1;
+    padding-top: 48px;
+  }
+}
