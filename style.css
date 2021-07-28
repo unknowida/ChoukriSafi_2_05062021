@@ -14,7 +14,8 @@ body {
 }
 
 section,
-aside {
+aside,
+footer {
   padding: 32px 24px;
 }
 
@@ -24,7 +25,8 @@ aside {
     padding: 0 32px;
   }
   section,
-  aside {
+  aside,
+  footer {
     padding: 48px 32px;
   }
   .search-filters {
@@ -209,7 +211,7 @@ form {
 }
 label {
   background-color: #f2f2f2;
-  border-radius: 16px 0 0 16px;
+  border-radius: 14px 0 0 14px;
   margin: -1px 0 0 -1px;
 }
 input {
@@ -270,12 +272,12 @@ button span {
 .filtres-list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: flex-start;
 }
 
 .filtres-list-item {
   align-items: center;
-  border: 2px solid #f2f2f2;
+  border: 1.5px solid hsl(0, 1%, 85%);
   border-radius: 28px;
   cursor: pointer;
   display: flex;
@@ -468,12 +470,12 @@ button span {
 }
 
 .populaires .card-img img {
-  border-radius: 16px 0 0 16px;
+  border-radius: 14px 0 0 14px;
 }
 
 .hebergements .card-img img,
 .activites .card-img img {
-  border-radius: 16px 16px 0 0;
+  border-radius: 14px 14px 0 0;
 }
 
 .card-content {
@@ -494,7 +496,7 @@ button span {
 .card strong {
   font-size: 1rem;
   display: block;
-  max-height: 40px;
+  /* max-height: 40px; */
   overflow: hidden;
 }
 
@@ -528,7 +530,9 @@ button span {
   .hebergements .cards {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    gap: 15px;
+
+    /* justify-content: space-between; */
     margin-top: 0;
   }
 
@@ -537,8 +541,10 @@ button span {
   }
 
   .hebergements .card {
-    width: 250px;
+    /* width: 250px; */
     margin: 32px auto 0;
+    min-width: 250px;
+    flex: 1;
   }
 
   .card-group {
@@ -554,12 +560,12 @@ button span {
   }
 
   .activites .card {
-    max-width: calc(50% - 40px / 2);
+    max-width: calc(50% - 20px);
     margin: 0;
   }
 
   .activites .card {
-    height: calc(50% - 40px / 2);
+    height: calc(50% - 20px);
   }
 
   .card.full {
