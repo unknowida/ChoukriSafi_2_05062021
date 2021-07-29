@@ -40,12 +40,18 @@ h3 {
   font-weight: bold;
 }
 
+h2 {
+  font-size: 1.5rem;
+}
+
 a {
   color: black;
   text-decoration: none;
 }
 
-.inscription a:hover {
+.inscription a:hover,
+.more:hover,
+footer a:hover {
   text-decoration: underline;
 }
 
@@ -365,9 +371,9 @@ button span {
 .title i {
   font-size: 1.5rem;
 }
-/* .more {
+.more {
   font-weight: bold;
-} */
+}
 
 /* PARTIE "MAIN" MOBILE */
 
@@ -485,6 +491,11 @@ button span {
   font-size: 14px;
   flex: 1;
 }
+
+.price-bold {
+  font-weight: bold;
+}
+
 .populaires .card-content {
   padding: 0 20px;
 }
@@ -492,11 +503,13 @@ button span {
 .hebergements .card-content {
   padding: 0 16px;
 }
+.hebergements .card-content p {
+  margin-top: 10px;
+}
 
 .card strong {
   font-size: 1rem;
   display: block;
-  /* max-height: 40px; */
   overflow: hidden;
 }
 
